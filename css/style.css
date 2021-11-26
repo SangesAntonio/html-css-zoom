@@ -22,9 +22,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .btns-w60 ul,
 .btns-w20 ul{
     display: flex;
+
 }
 .btns-w60 li,
 .btns-w20 li{
@@ -77,6 +79,8 @@ body{
     align-items: flex-end;
     margin-bottom: 10px;
     margin-top: 5px;
+    transition: transform 0.7s;
+    
 }
 
 .bottom-nav-container{
@@ -140,22 +144,35 @@ a{
     font-size: 13px;
 }
 
-
-
 /**ICONS**/
 .btns-w60 i,
 .btns-w20 i{
     color: white;
     font-size: 1.8rem;
     margin-bottom: 5px;
+    cursor: pointer;
+    transition: color 0.6s;
 }
 .btns-w60 ul li i.fa-chevron-up,
 .btns-w20 ul li i.fa-chevron-up{
     font-size: 12px;
+    margin-top: 20px;
 }
 
 .btns-w60 ul li i.fa-share-square{
     color: #4BC800;
 }
+
+
+/***Transitions***/
+footer i:hover{
+    color: lightgreen;
+}
+
+.user-cam:hover{
+    transform: scale(1.1);
+    border: 2px solid rgba(245, 248, 46, 0.767);
+}
+
 
 
